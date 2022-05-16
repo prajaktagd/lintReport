@@ -1,0 +1,3560 @@
+[
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/lcm.js",
+    "messages": [
+      {
+        "ruleId": "no-extra-parens",
+        "severity": 2,
+        "message": "Unnecessary parentheses around expression.",
+        "line": 2,
+        "column": 10,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 2,
+        "endColumn": 11,
+        "fix": {
+          "range": [
+            44,
+            53
+          ],
+          "text": "n1 % n2"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 2,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 14,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 14,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 14,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 14,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            238,
+            257
+          ],
+          "text": "'LCM of 1 and 2 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 14,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 14,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 14,
+        "column": 43,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 14,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 15,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 15,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 15,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 15,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            285,
+            304
+          ],
+          "text": "'LCM of 4 and 3 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 15,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 15,
+        "column": 43,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 16,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 16,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 16,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 16,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            332,
+            351
+          ],
+          "text": "'LCM of 3 and 3 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 16,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 16,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 16,
+        "column": 43,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 16,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 17,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 17,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 17,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 17,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            379,
+            402
+          ],
+          "text": "'LCM of 123 and 234 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 123.",
+        "line": 17,
+        "column": 44,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 234.",
+        "line": 17,
+        "column": 49,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 20,
+        "column": 8,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            430,
+            430
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 18,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 5,
+    "fixableWarningCount": 1,
+    "source": "function isNotDivisbleBy(n1, n2) {\n  return (n1 % n2) !== 0;\n}\n\nfunction lcm(n1, n2) {\n  let multiple = n1;\n  while (isNotDivisbleBy(multiple, n2)) {\n    multiple = multiple + n1;\n  }\n  return multiple;\n}\n\nfunction main() {\n  console.log(\"LCM of 1 and 2 is\", lcm(1, 2));\n  console.log(\"LCM of 4 and 3 is\", lcm(4, 3));\n  console.log(\"LCM of 3 and 3 is\", lcm(3, 3));\n  console.log(\"LCM of 123 and 234 is\", lcm(123, 234));\n}\n\nmain();",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/mathFunctions.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 2,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 2,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 2,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 2,
+        "endColumn": 36,
+        "fix": {
+          "range": [
+            42,
+            63
+          ],
+          "text": "'Square root of 100:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 100.",
+        "line": 2,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 3,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 3,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 3,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 3,
+        "endColumn": 37,
+        "fix": {
+          "range": [
+            96,
+            118
+          ],
+          "text": "'Square root of -100:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -100.",
+        "line": 3,
+        "column": 49,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 3,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 4,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 4,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 4,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 4,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            152,
+            171
+          ],
+          "text": "'Square root of 1:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 4,
+        "column": 46,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 4,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 5,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 5,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 5,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 5,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            202,
+            221
+          ],
+          "text": "'Square root of 2:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 5,
+        "column": 46,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 5,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 6,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 6,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 6,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 6,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            252,
+            271
+          ],
+          "text": "'Square root of 0:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 6,
+        "column": 46,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 6,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 7,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 7,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 7,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 7,
+        "endColumn": 36,
+        "fix": {
+          "range": [
+            302,
+            323
+          ],
+          "text": "'Square root of 2.5:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.5.",
+        "line": 7,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 7,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 11,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 11,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 11,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 11,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            386,
+            409
+          ],
+          "text": "'Absolute value of 10:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 11,
+        "column": 49,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 12,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 12,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 12,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 12,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            440,
+            464
+          ],
+          "text": "'Absolute value of -10:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -10.",
+        "line": 12,
+        "column": 50,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 12,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 13,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 13,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 13,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 13,
+        "endColumn": 37,
+        "fix": {
+          "range": [
+            496,
+            518
+          ],
+          "text": "'Absolute value of 0:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 13,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 13,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 14,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 14,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 14,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 14,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            548,
+            572
+          ],
+          "text": "'Absolute value of 0.7:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.7.",
+        "line": 14,
+        "column": 50,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 14,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 15,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 15,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 15,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 15,
+        "endColumn": 40,
+        "fix": {
+          "range": [
+            604,
+            629
+          ],
+          "text": "'Absolute value of -0.7:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -0.7.",
+        "line": 15,
+        "column": 51,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 19,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 19,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 19,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 19,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            692,
+            715
+          ],
+          "text": "'10 to the power of 3:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 19,
+        "column": 49,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 19,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 19,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 19,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 20,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 20,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 20,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 20,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            749,
+            773
+          ],
+          "text": "'-10 to the power of 3:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -10.",
+        "line": 20,
+        "column": 50,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 20,
+        "column": 55,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 21,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 21,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 21,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 21,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            808,
+            832
+          ],
+          "text": "'10 to the power of -3:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 21,
+        "column": 50,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -3.",
+        "line": 21,
+        "column": 54,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 22,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 22,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 22,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 22,
+        "endColumn": 40,
+        "fix": {
+          "range": [
+            867,
+            892
+          ],
+          "text": "'-10 to the power of -3:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -10.",
+        "line": 22,
+        "column": 51,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 22,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -3.",
+        "line": 22,
+        "column": 56,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 22,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 23,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 23,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 23,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 23,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            928,
+            951
+          ],
+          "text": "'10 to the power of 0:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 23,
+        "column": 49,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 23,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 24,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 24,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 24,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 24,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            985,
+            1009
+          ],
+          "text": "'-10 to the power of 0:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -10.",
+        "line": 24,
+        "column": 50,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 24,
+        "column": 55,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 25,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 25,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 25,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 25,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            1044,
+            1068
+          ],
+          "text": "'1.2 to the power of 2:'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.2.",
+        "line": 25,
+        "column": 50,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 25,
+        "column": 55,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 29,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 29,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            1133,
+            1156
+          ],
+          "text": "'Greatest of 12, 34 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 12.",
+        "line": 29,
+        "column": 49,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 34.",
+        "line": 29,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 30,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 30,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 30,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 30,
+        "endColumn": 42,
+        "fix": {
+          "range": [
+            1191,
+            1218
+          ],
+          "text": "'Greatest of 90, 12, 34 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 90.",
+        "line": 30,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 12.",
+        "line": 30,
+        "column": 57,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 34.",
+        "line": 30,
+        "column": 61,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 63
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 31,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 31,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 31,
+        "endColumn": 46,
+        "fix": {
+          "range": [
+            1257,
+            1288
+          ],
+          "text": "'Greatest of 90, 12, 34, 65 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 90.",
+        "line": 31,
+        "column": 57,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 12.",
+        "line": 31,
+        "column": 61,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 63
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 34.",
+        "line": 31,
+        "column": 65,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 67
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 65.",
+        "line": 31,
+        "column": 69,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 71
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 35,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 35,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 35,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 35,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            1361,
+            1384
+          ],
+          "text": "'Smallest of 12, 34 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 12.",
+        "line": 35,
+        "column": 49,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 35,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 34.",
+        "line": 35,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 35,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 36,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 36,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 36,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 36,
+        "endColumn": 42,
+        "fix": {
+          "range": [
+            1419,
+            1446
+          ],
+          "text": "'Smallest of 90, 12, 34 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 90.",
+        "line": 36,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 12.",
+        "line": 36,
+        "column": 57,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 34.",
+        "line": 36,
+        "column": 61,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 63
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 37,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 37,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 37,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 37,
+        "endColumn": 46,
+        "fix": {
+          "range": [
+            1485,
+            1516
+          ],
+          "text": "'Smallest of 90, 12, 34, 65 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 90.",
+        "line": 37,
+        "column": 57,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 37,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 12.",
+        "line": 37,
+        "column": 61,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 37,
+        "endColumn": 63
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 34.",
+        "line": 37,
+        "column": 65,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 37,
+        "endColumn": 67
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 65.",
+        "line": 37,
+        "column": 69,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 37,
+        "endColumn": 71
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 41,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 41,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 41,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 41,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            1591,
+            1614
+          ],
+          "text": "'Round value of 2.6 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.6.",
+        "line": 41,
+        "column": 51,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 41,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 42,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 42,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 42,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 42,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            1648,
+            1671
+          ],
+          "text": "'Round value of 2.5 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.5.",
+        "line": 42,
+        "column": 51,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 42,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 43,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 43,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 43,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 43,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            1705,
+            1728
+          ],
+          "text": "'Round value of 2.3 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.3.",
+        "line": 43,
+        "column": 51,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 43,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 44,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 44,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 44,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 44,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            1762,
+            1786
+          ],
+          "text": "'Round value of -2.3 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -2.3.",
+        "line": 44,
+        "column": 52,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 44,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 45,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 45,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 45,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 45,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            1821,
+            1845
+          ],
+          "text": "'Round value of -2.6 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -2.6.",
+        "line": 45,
+        "column": 52,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 45,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 49,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 49,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 49,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 49,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            1912,
+            1935
+          ],
+          "text": "'Floor value of 2.6 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.6.",
+        "line": 49,
+        "column": 51,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 49,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 50,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 50,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 50,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 50,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            1969,
+            1993
+          ],
+          "text": "'Floor value of -2.6 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -2.6.",
+        "line": 50,
+        "column": 52,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 50,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 51,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 51,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 51,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 51,
+        "endColumn": 37,
+        "fix": {
+          "range": [
+            2028,
+            2050
+          ],
+          "text": "'Floor value of -2 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -2.",
+        "line": 51,
+        "column": 50,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 51,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 55,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 55,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 55,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 55,
+        "endColumn": 40,
+        "fix": {
+          "range": [
+            2114,
+            2139
+          ],
+          "text": "'Ceiling value of 2.6 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.6.",
+        "line": 55,
+        "column": 52,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 55,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 56,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 56,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 56,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 56,
+        "endColumn": 41,
+        "fix": {
+          "range": [
+            2172,
+            2198
+          ],
+          "text": "'Ceiling value of -2.6 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -2.6.",
+        "line": 56,
+        "column": 53,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 56,
+        "endColumn": 57
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 57,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 57,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 57,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 57,
+        "endColumn": 38,
+        "fix": {
+          "range": [
+            2232,
+            2255
+          ],
+          "text": "'Ceiling value of 2 is'"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 57,
+        "column": 50,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 57,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 61,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 61,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 61,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 61,
+        "endColumn": 32,
+        "fix": {
+          "range": [
+            2319,
+            2336
+          ],
+          "text": "'Random value is'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 62,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 62,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 62,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 62,
+        "endColumn": 32,
+        "fix": {
+          "range": [
+            2368,
+            2385
+          ],
+          "text": "'Random value is'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 66,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 66,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 66,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 66,
+        "endColumn": 28,
+        "fix": {
+          "range": [
+            2446,
+            2459
+          ],
+          "text": "'Pi value is'"
+        }
+      },
+      {
+        "ruleId": "max-statements",
+        "severity": 2,
+        "message": "Function 'main' has too many statements (19). Maximum allowed is 10.",
+        "line": 69,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "exceed",
+        "endLine": 89,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 71,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 71,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 73,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 73,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 75,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 75,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 77,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 77,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 79,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 79,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 81,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 81,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 83,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 83,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 85,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 85,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 87,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 87,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 91,
+        "column": 8,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            2853,
+            2853
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 140,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 38,
+    "fixableWarningCount": 1,
+    "source": "function examplesOfSqrt() {\n  console.log(\"Square root of 100:\", Math.sqrt(100));\n  console.log(\"Square root of -100:\", Math.sqrt(-100));\n  console.log(\"Square root of 1:\", Math.sqrt(1));\n  console.log(\"Square root of 2:\", Math.sqrt(2));\n  console.log(\"Square root of 0:\", Math.sqrt(0));\n  console.log(\"Square root of 2.5:\", Math.sqrt(2.5));\n}\n\nfunction examplesOfAbs() {\n  console.log(\"Absolute value of 10:\", Math.abs(10));\n  console.log(\"Absolute value of -10:\", Math.abs(-10));\n  console.log(\"Absolute value of 0:\", Math.abs(0));\n  console.log(\"Absolute value of 0.7:\", Math.abs(0.7));\n  console.log(\"Absolute value of -0.7:\", Math.abs(-0.7));\n}\n\nfunction examplesOfPow() {\n  console.log(\"10 to the power of 3:\", Math.pow(10, 3));\n  console.log(\"-10 to the power of 3:\", Math.pow(-10, 3));\n  console.log(\"10 to the power of -3:\", Math.pow(10, -3));\n  console.log(\"-10 to the power of -3:\", Math.pow(-10, -3));\n  console.log(\"10 to the power of 0:\", Math.pow(10, 0));\n  console.log(\"-10 to the power of 0:\", Math.pow(-10, 0));\n  console.log(\"1.2 to the power of 2:\", Math.pow(1.2, 2));\n}\n\nfunction examplesOfMax() {\n  console.log(\"Greatest of 12, 34 is\", Math.max(12, 34));\n  console.log(\"Greatest of 90, 12, 34 is\", Math.max(90, 12, 34));\n  console.log(\"Greatest of 90, 12, 34, 65 is\", Math.max(90, 12, 34, 65));\n}\n\nfunction examplesOfMin() {\n  console.log(\"Smallest of 12, 34 is\", Math.min(12, 34));\n  console.log(\"Smallest of 90, 12, 34 is\", Math.min(90, 12, 34));\n  console.log(\"Smallest of 90, 12, 34, 65 is\", Math.min(90, 12, 34, 65));\n}\n\nfunction examplesOfRound() {\n  console.log(\"Round value of 2.6 is\", Math.round(2.6));\n  console.log(\"Round value of 2.5 is\", Math.round(2.5));\n  console.log(\"Round value of 2.3 is\", Math.round(2.3));\n  console.log(\"Round value of -2.3 is\", Math.round(-2.3));\n  console.log(\"Round value of -2.6 is\", Math.round(-2.6));\n}\n\nfunction examplesOfFloor() {\n  console.log(\"Floor value of 2.6 is\", Math.floor(2.6));\n  console.log(\"Floor value of -2.6 is\", Math.floor(-2.6));\n  console.log(\"Floor value of -2 is\", Math.floor(-2));\n}\n\nfunction examplesOfCeil() {\n  console.log(\"Ceiling value of 2.6 is\", Math.ceil(2.6));\n  console.log(\"Ceiling value of -2.6 is\", Math.ceil(-2.6));\n  console.log(\"Ceiling value of 2 is\", Math.ceil(2));\n}\n\nfunction examplesOfRandom() {\n  console.log(\"Random value is\", Math.random());\n  console.log(\"Random value is\", Math.random());\n}\n\nfunction examplesOfPi() {\n  console.log(\"Pi value is\", Math.PI);\n}\n\nfunction main() {\n  examplesOfSqrt();\n  console.log();\n  examplesOfAbs();\n  console.log();\n  examplesOfPow();\n  console.log();\n  examplesOfMax();\n  console.log();\n  examplesOfMin();\n  console.log();\n  examplesOfRound();\n  console.log();\n  examplesOfFloor();\n  console.log();\n  examplesOfCeil();\n  console.log();\n  examplesOfRandom();\n  console.log();\n  examplesOfPi();\n}\n\nmain();",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/patternGenerator.js",
+    "messages": [
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 1,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 1,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "max-params",
+        "severity": 2,
+        "message": "Function has too many parameters (5). Maximum allowed is 4.",
+        "line": 1,
+        "column": 26,
+        "nodeType": "FunctionExpression",
+        "messageId": "exceed",
+        "endLine": 1,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "semi",
+        "severity": 2,
+        "message": "Missing semicolon.",
+        "line": 8,
+        "column": 61,
+        "nodeType": "VariableDeclaration",
+        "messageId": "missingSemi",
+        "endLine": 9,
+        "endColumn": 1,
+        "fix": {
+          "range": [
+            423,
+            423
+          ],
+          "text": ";"
+        }
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'maxHeight' is defined but never used.",
+        "line": 15,
+        "column": 56,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 15,
+        "endColumn": 65
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'maxWidth' is defined but never used.",
+        "line": 19,
+        "column": 53,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 19,
+        "endColumn": 61
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'maxHeight' is defined but never used.",
+        "line": 19,
+        "column": 63,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 19,
+        "endColumn": 72
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'lineNum' is defined but never used.",
+        "line": 31,
+        "column": 40,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 31,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'maxWidth' is defined but never used.",
+        "line": 31,
+        "column": 49,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 31,
+        "endColumn": 57
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'maxHeight' is defined but never used.",
+        "line": 31,
+        "column": 59,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 31,
+        "endColumn": 68
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 36,
+        "column": 19,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'maxHeight' is defined but never used.",
+        "line": 42,
+        "column": 51,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 42,
+        "endColumn": 60
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'filledRectangle' is assigned a value but never used.",
+        "line": 50,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 50,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 98. Maximum allowed is 80.",
+        "line": 51,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 51,
+        "endColumn": 99
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'hollowRectangle' is assigned a value but never used.",
+        "line": 54,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 54,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 55,
+        "column": 18,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 55,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 98. Maximum allowed is 80.",
+        "line": 58,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 58,
+        "endColumn": 99
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 98. Maximum allowed is 80.",
+        "line": 62,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 62,
+        "endColumn": 99
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'leftAlignedTriangle' is assigned a value but never used.",
+        "line": 65,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 65,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 104. Maximum allowed is 80.",
+        "line": 66,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 66,
+        "endColumn": 105
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'hollowLeftAlignedTriangle' is assigned a value but never used.",
+        "line": 69,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 69,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 104. Maximum allowed is 80.",
+        "line": 70,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 70,
+        "endColumn": 105
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'rightAlignedTriangle' is assigned a value but never used.",
+        "line": 73,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 73,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 103. Maximum allowed is 80.",
+        "line": 74,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 74,
+        "endColumn": 104
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'hollowRightAlignedTriangle' is assigned a value but never used.",
+        "line": 77,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 77,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 103. Maximum allowed is 80.",
+        "line": 78,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 78,
+        "endColumn": 104
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 83,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 83,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 83,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 83,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 83,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 83,
+        "endColumn": 34
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 28,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 0,
+    "source": "const patternGenerator = function (maxWidth, maxHeight, widthGenerator, styleGenerator, pad) {\n  let pattern = '';\n  let separator = '';\n  for (let lineNum = 1; lineNum <= maxHeight; lineNum++) {\n    const width = widthGenerator(lineNum, maxWidth, maxHeight);\n    const style = styleGenerator(lineNum, maxWidth, maxHeight);\n    const row = style(width, lineNum);\n    const paddedRow = pad(row, lineNum, maxWidth, maxHeight)\n    pattern += separator + paddedRow;\n    separator = '\\n';\n  }\n  return pattern;\n};\n\nconst maxWidthGenerator = function (lineNum, maxWidth, maxHeight) {\n  return maxWidth;\n};\n\nconst lineNumberWidthGenerator = function (lineNum, maxWidth, maxHeight) {\n  return lineNum;\n};\n\nconst stars = function (width) {\n  return '*'.repeat(width);\n};\n\nconst hollowLine = function (width) {\n  return '*'.padStart(width, '*'.padEnd(width));\n};\n\nconst filledStyleGenerator = function (lineNum, maxWidth, maxHeight) {\n  return stars;\n};\n\nconst hollowStyleGenerator = function (lineNum, maxWidth, maxHeight) {\n  if (lineNum === 1 || lineNum === maxHeight) {\n    return stars;\n  }\n  return hollowLine;\n};\n\nconst padLeft = function (row, lineNum, maxWidth, maxHeight) {\n  return row.padStart(maxWidth);\n};\n\nconst doNotPad = function (row) {\n  return row;\n};\n\nconst filledRectangle = function (maxWidth, maxHeight) {\n  return patternGenerator(maxWidth, maxHeight, maxWidthGenerator, filledStyleGenerator, doNotPad);\n};\n\nconst hollowRectangle = function (maxWidth, maxHeight) {\n  if (maxWidth < 1) {\n    return '';\n  }\n  return patternGenerator(maxWidth, maxHeight, maxWidthGenerator, hollowStyleGenerator, doNotPad);\n};\n\nconst alternatePattern = function (maxWidth, maxHeight) {\n  return patternGenerator(maxWidth, maxHeight, maxWidthGenerator, filledStyleGenerator, doNotPad);\n};\n\nconst leftAlignedTriangle = function (maxWidth) {\n  return patternGenerator(maxWidth, maxWidth, lineNumberWidthGenerator, filledStyleGenerator, doNotPad);\n};\n\nconst hollowLeftAlignedTriangle = function (maxWidth) {\n  return patternGenerator(maxWidth, maxWidth, lineNumberWidthGenerator, hollowStyleGenerator, doNotPad);\n};\n\nconst rightAlignedTriangle = function (maxWidth) {\n  return patternGenerator(maxWidth, maxWidth, lineNumberWidthGenerator, filledStyleGenerator, padLeft);\n};\n\nconst hollowRightAlignedTriangle = function (maxWidth) {\n  return patternGenerator(maxWidth, maxWidth, lineNumberWidthGenerator, hollowStyleGenerator, padLeft);\n};\n\n// console.log(filledRectangle(2, 2));\n// console.log(hollowRectangle(5, 5));\nconsole.log(alternatePattern(5, 5));\n// console.log(leftAlignedTriangle(5));\n// console.log(hollowLeftAlignedTriangle(5));\n// console.log(rightAlignedTriangle(5));\n// console.log(hollowRightAlignedTriangle(5));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/vowelConsonant.js",
+    "messages": [
+      {
+        "ruleId": "complexity",
+        "severity": 2,
+        "message": "Function 'vowelOrConsonant' has a complexity of 11. Maximum allowed is 4.",
+        "line": 1,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "complex",
+        "endLine": 17,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 3,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 3,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            60,
+            64
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 3,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 3,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            69,
+            72
+          ],
+          "text": "'a'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 4,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 4,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            74,
+            78
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 4,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 4,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            83,
+            86
+          ],
+          "text": "'e'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 5,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 5,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            88,
+            92
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 5,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 5,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            97,
+            100
+          ],
+          "text": "'i'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 6,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 6,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            102,
+            106
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 6,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 6,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            111,
+            114
+          ],
+          "text": "'o'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 7,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 7,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            116,
+            120
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 7,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 7,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            125,
+            128
+          ],
+          "text": "'u'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 8,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 8,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            130,
+            134
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 8,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 8,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            139,
+            142
+          ],
+          "text": "'A'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 9,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 9,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            144,
+            148
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 9,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 9,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            153,
+            156
+          ],
+          "text": "'E'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 10,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 10,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            158,
+            162
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 10,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 10,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            167,
+            170
+          ],
+          "text": "'I'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 11,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 11,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            172,
+            176
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 11,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 11,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            181,
+            184
+          ],
+          "text": "'O'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 12,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 12,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            186,
+            190
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 12,
+        "column": 10,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 12,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            195,
+            198
+          ],
+          "text": "'U'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 4 spaces but found 6.",
+        "line": 13,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 13,
+        "endColumn": 7,
+        "fix": {
+          "range": [
+            200,
+            206
+          ],
+          "text": "    "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 13,
+        "column": 14,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 13,
+        "endColumn": 21,
+        "fix": {
+          "range": [
+            213,
+            220
+          ],
+          "text": "'vowel'"
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 2 spaces but found 4.",
+        "line": 14,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 14,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            222,
+            226
+          ],
+          "text": "  "
+        }
+      },
+      {
+        "ruleId": "indent",
+        "severity": 2,
+        "message": "Expected indentation of 4 spaces but found 6.",
+        "line": 15,
+        "column": 1,
+        "nodeType": "Keyword",
+        "messageId": "wrongIndentation",
+        "endLine": 15,
+        "endColumn": 7,
+        "fix": {
+          "range": [
+            235,
+            241
+          ],
+          "text": "    "
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 15,
+        "column": 14,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 15,
+        "endColumn": 25,
+        "fix": {
+          "range": [
+            248,
+            259
+          ],
+          "text": "'consonant'"
+        }
+      },
+      {
+        "ruleId": "max-statements",
+        "severity": 2,
+        "message": "Function 'main' has too many statements (12). Maximum allowed is 10.",
+        "line": 19,
+        "column": 1,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "exceed",
+        "endLine": 32,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 20,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 20,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 20,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 20,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            300,
+            308
+          ],
+          "text": "'a is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 20,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 20,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            327,
+            330
+          ],
+          "text": "'a'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 21,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 21,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 21,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 21,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            348,
+            356
+          ],
+          "text": "'e is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 21,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 21,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            375,
+            378
+          ],
+          "text": "'e'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 22,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 22,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 22,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 22,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            396,
+            404
+          ],
+          "text": "'i is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 22,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 22,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            423,
+            426
+          ],
+          "text": "'i'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 23,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 23,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 23,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 23,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            444,
+            452
+          ],
+          "text": "'o is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 23,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 23,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            471,
+            474
+          ],
+          "text": "'o'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 24,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 24,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 24,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 24,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            492,
+            500
+          ],
+          "text": "'u is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 24,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 24,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            519,
+            522
+          ],
+          "text": "'u'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 25,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 25,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 25,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 25,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            540,
+            548
+          ],
+          "text": "'A is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 25,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 25,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            567,
+            570
+          ],
+          "text": "'A'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 26,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 26,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 26,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 26,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            588,
+            596
+          ],
+          "text": "'E is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 26,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 26,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            615,
+            618
+          ],
+          "text": "'E'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 27,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 27,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 27,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 27,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            636,
+            644
+          ],
+          "text": "'I is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 27,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 27,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            663,
+            666
+          ],
+          "text": "'I'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 28,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 28,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 28,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 28,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            684,
+            692
+          ],
+          "text": "'O is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 28,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 28,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            711,
+            714
+          ],
+          "text": "'O'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 29,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 29,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            732,
+            740
+          ],
+          "text": "'U is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 29,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 29,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            759,
+            762
+          ],
+          "text": "'U'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 30,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 30,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 30,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 30,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            780,
+            788
+          ],
+          "text": "'p is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 30,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 30,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            807,
+            810
+          ],
+          "text": "'p'"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 31,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 31,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 31,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            828,
+            836
+          ],
+          "text": "'P is a'"
+        }
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 31,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 31,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            855,
+            858
+          ],
+          "text": "'P'"
+        }
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 34,
+        "column": 8,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            872,
+            872
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 63,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 49,
+    "fixableWarningCount": 1,
+    "source": "function vowelOrConsonant(alphabet) {\n  switch (alphabet) {\n    case \"a\":\n    case \"e\":\n    case \"i\":\n    case \"o\":\n    case \"u\":\n    case \"A\":\n    case \"E\":\n    case \"I\":\n    case \"O\":\n    case \"U\":\n      return \"vowel\";\n    default:\n      return \"consonant\";\n  }\n}\n\nfunction main() {\n  console.log(\"a is a\", vowelOrConsonant(\"a\"));\n  console.log(\"e is a\", vowelOrConsonant(\"e\"));\n  console.log(\"i is a\", vowelOrConsonant(\"i\"));\n  console.log(\"o is a\", vowelOrConsonant(\"o\"));\n  console.log(\"u is a\", vowelOrConsonant(\"u\"));\n  console.log(\"A is a\", vowelOrConsonant(\"A\"));\n  console.log(\"E is a\", vowelOrConsonant(\"E\"));\n  console.log(\"I is a\", vowelOrConsonant(\"I\"));\n  console.log(\"O is a\", vowelOrConsonant(\"O\"));\n  console.log(\"U is a\", vowelOrConsonant(\"U\"));\n  console.log(\"p is a\", vowelOrConsonant(\"p\"));\n  console.log(\"P is a\", vowelOrConsonant(\"P\"));\n}\n\nmain();",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  }
+]

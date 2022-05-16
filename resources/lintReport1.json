@@ -1,0 +1,4811 @@
+[
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/balancedParentheses.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 2,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "complexity",
+        "severity": 2,
+        "message": "Function has a complexity of 6. Maximum allowed is 4.",
+        "line": 18,
+        "column": 32,
+        "nodeType": "FunctionExpression",
+        "messageId": "complex",
+        "endLine": 28,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "brace-style",
+        "severity": 2,
+        "message": "Statement inside of curly braces should be on next line.",
+        "line": 21,
+        "column": 44,
+        "nodeType": "Punctuator",
+        "messageId": "blockSameLine",
+        "endLine": 21,
+        "endColumn": 45,
+        "fix": {
+          "range": [
+            584,
+            584
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "brace-style",
+        "severity": 2,
+        "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+        "line": 21,
+        "column": 71,
+        "nodeType": "Punctuator",
+        "messageId": "singleLineClose",
+        "endLine": 21,
+        "endColumn": 72,
+        "fix": {
+          "range": [
+            610,
+            610
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "brace-style",
+        "severity": 2,
+        "message": "Statement inside of curly braces should be on next line.",
+        "line": 23,
+        "column": 27,
+        "nodeType": "Punctuator",
+        "messageId": "blockSameLine",
+        "endLine": 23,
+        "endColumn": 28,
+        "fix": {
+          "range": [
+            684,
+            684
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "brace-style",
+        "severity": 2,
+        "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+        "line": 23,
+        "column": 43,
+        "nodeType": "Punctuator",
+        "messageId": "singleLineClose",
+        "endLine": 23,
+        "endColumn": 44,
+        "fix": {
+          "range": [
+            699,
+            699
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "brace-style",
+        "severity": 2,
+        "message": "Statement inside of curly braces should be on next line.",
+        "line": 24,
+        "column": 46,
+        "nodeType": "Punctuator",
+        "messageId": "blockSameLine",
+        "endLine": 24,
+        "endColumn": 47,
+        "fix": {
+          "range": [
+            747,
+            747
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "brace-style",
+        "severity": 2,
+        "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+        "line": 24,
+        "column": 62,
+        "nodeType": "Punctuator",
+        "messageId": "singleLineClose",
+        "endLine": 24,
+        "endColumn": 63,
+        "fix": {
+          "range": [
+            762,
+            762
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 8,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 6,
+    "fixableWarningCount": 0,
+    "source": "const isEmpty = function (stack) {\n  return stack.length === 0;\n};\n\nconst isOpeningParenthesis = function (character) {\n  return '([{'.includes(character);\n};\n\nconst isClosingParenthesis = function (character) {\n  return ')]}'.includes(character);\n};\n\nconst isPair = function (openingParenthesis, closingParenthesis) {\n  const pairs = '(),[],{}';\n  return pairs.includes(openingParenthesis + closingParenthesis);\n};\n\nconst areBalancedParentheses = function (text) {\n  const stack = [];\n  for (let index = 0; index < text.length; index++) {\n    if (isOpeningParenthesis(text[index])) { stack.push(text[index]); }\n    if (isClosingParenthesis(text[index])) {\n      if (isEmpty(stack)) { return false; }\n      if (!isPair(stack.pop(), text[index])) { return false; }\n    }\n  }\n  return isEmpty(stack);\n};\n\nexports.areBalancedParentheses = areBalancedParentheses;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/compareArrays.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/cycle.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 11,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 11,
+        "column": 18,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 11,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 11,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 11,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 11,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'c' is too short (< 2).",
+        "line": 12,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 12,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 20.",
+        "line": 14,
+        "column": 29,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 14,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 15,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 15,
+        "endColumn": 14
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 9,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const cycle = function (list) {\n  let index = 0;\n  return function () {\n    const element = list[index];\n    index++;\n    index = index % list.length;\n    return element;\n  };\n};\n\nconst list = [1, 2, 3, 4, 5, 6];\nconst c = cycle(list);\n\nfor (let index = 0; index < 20; index++) {\n  console.log(c());\n}\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/deDupe.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 4,
+        "column": 44,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 4,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 10,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 10,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 10,
+        "column": 14,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 10,
+        "column": 18,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 10,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 10,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 10,
+        "column": 29,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 10,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 10,
+        "column": 36,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 10,
+        "column": 39,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 10,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 11,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 11,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 11,
+        "column": 14,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 11,
+        "column": 17,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 11,
+        "column": 20,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 11,
+        "column": 23,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 11,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 12,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 12,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 12,
+        "column": 60,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            393,
+            393
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 18,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 1,
+    "source": "const isEqual = require('../array-assignment/src/isEqualRecursion.js').isEqual;\n\nconst deDupe = function (list, element) {\n  if (!isEqual(element, list[list.length - 1])) {\n    list.push(element);\n  }\n  return list;\n};\n\nconsole.log([1, [1, 2], [1, 2], 1, 2, 2, 3].reduce(deDupe, []));\nconsole.log([1, 1, 2, 2, 3].reduce(deDupe, []));\nconsole.log('hello'.split('').reduce(deDupe, []).join(''));",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/fill.js",
+    "messages": [
+      {
+        "ruleId": "semi",
+        "severity": 2,
+        "message": "Missing semicolon.",
+        "line": 7,
+        "column": 2,
+        "nodeType": "VariableDeclaration",
+        "messageId": "missingSemi",
+        "endLine": 8,
+        "endColumn": 1,
+        "fix": {
+          "range": [
+            179,
+            179
+          ],
+          "text": ";"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 0,
+    "source": "const fill = function (array, value) {\n  const filledArray = [];\n  for (let index = 0; index < array.length; index++) {\n    filledArray[index] = value;\n  }\n  return filledArray;\n}\n\nexports.fill = fill;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/filter.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 2,
+        "column": 17,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 38,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 38,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 41,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 41,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 44,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 44,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 47,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 47,
+        "endColumn": 12
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 5,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const isFromSTIP = function (record) {\n  return record[1] === 'STIP';\n};\n\nconst isVowel = function (character) {\n  return 'aeiou'.includes(character.toLowerCase());\n};\n\nconst vowels = function (text) {\n  return filter(text.split(''), isVowel);\n};\n\nconst invert = function (predicate) {\n  return function (element) {\n    return !predicate(element);\n  };\n};\n\nconst map = function (list, mapper) {\n  const mappedList = [];\n  for (let index = 0; index < list.length; index++) {\n    mappedList.push(mapper(list[index], index, list));\n  }\n  return mappedList;\n};\n\nconst filter = function (list, predicate) {\n  const filteredList = [];\n  for (let index = 0; index < list.length; index++) {\n    if (predicate(list[index], index, list)) {\n      filteredList.push(list[index]);\n    }\n  }\n  return filteredList;\n};\n\nconst characters = 'welcome'.split('');\nconsole.log(filter(characters, isVowel));\n\nconst strings = ['lotus', 'marigold', 'tulip', 'jasmine'];\nconsole.log(map(strings, vowels));\n\nconst record = [['Nilam', 'STIP'], ['Abin', 'STIP'], ['Sneha', 'STEP']];\nconsole.log(filter(record, isFromSTIP));\n\nconst isFromSTEP = invert(isFromSTIP);\nconsole.log(filter(record, isFromSTEP));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/find.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 2,
+        "column": 23,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'find' is assigned a value but never used.",
+        "line": 5,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 5,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 92. Maximum allowed is 80.",
+        "line": 13,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 13,
+        "endColumn": 93
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 13,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 13,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 90. Maximum allowed is 80.",
+        "line": 14,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 14,
+        "endColumn": 91
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 14,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 14,
+        "endColumn": 12
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 6,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const isMaharashtrian = function (internRecord) {\n  return internRecord[1] === 'MH';\n};\n\nconst find = function (list, predicate) {\n  for (let index = 0; index < list.length; index++) {\n    if (predicate(list[index], index, list)) {\n      return list[index];\n    }\n  }\n};\n\nconsole.log([['Nilam', 'MH'], ['Prajakta', 'MH'], ['Lakshmi', 'TG']].find(isMaharashtrian));\nconsole.log([['Ankamma', 'AP'], ['Abin', 'KL'], ['Lakshmi', 'TG']].find(isMaharashtrian));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/flat.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 28,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 28,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 28,
+        "column": 19,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 28,
+        "column": 22,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 28,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 7.",
+        "line": 28,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 30,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 30,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 30,
+        "column": 19,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 31,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 31,
+        "column": 20,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 21
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 10,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "// const addElements = function (list, flattedList) {\n//   for (let index = 0; index < list.length; index++) {\n//     flattedList.push(list[index]);\n//   }\n//   return flattedList;\n// };\n\n// const flat = function (list) {\n//   let flattedList = [];\n//   for (let index = 0; index < list.length; index++) {\n//     let collection = [list[index]];\n//     if (Array.isArray(list[index])) {\n//       collection = list[index];\n//     }\n//     addElements(collection, flattedList);\n//   }\n//   return flattedList;\n// };\n\nconst flat = function (list) {\n  let flattedList = [];\n  for (let index = 0; index < list.length; index++) {\n    flattedList = flattedList.concat(list[index]);\n  }\n  return flattedList;\n};\n\nconsole.log(flat([1, 2, [6, [7]]]));\nconsole.log(flat([]));\nconsole.log(flat([1]));\nconsole.log(flat([[1]]));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/forEach.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 2,
+        "column": 10,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 2,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 9,
+        "column": 23,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 9,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'i' is too short (< 2).",
+        "line": 9,
+        "column": 26,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 9,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 10,
+        "column": 14,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 13,
+        "column": 24,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 13,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 23,
+        "column": 14,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 23,
+        "column": 17,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 23,
+        "column": 20,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 23,
+        "column": 23,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 24,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 24,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 25,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 25,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 26,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 26,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 27,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 27,
+        "endColumn": 12
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 13,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const print = function (element) {\n  return console.log(element);\n};\n\nconst yes = function () {\n  return true;\n};\n\nconst alt = function (x, i) {\n  return i % 2;\n};\n\nconst both = function (x) {\n  return [x, !x];\n};\n\nconst forEach = function (list, iteration) {\n  for (let index = 0; index < list.length; index++) {\n    iteration(list[index], index, list);\n  }\n};\n\nconst arr = [1, 2, 3, 4];\nconsole.log(forEach(arr, print));\nconsole.log(forEach(arr, yes));\nconsole.log(forEach(arr, alt));\nconsole.log(forEach(arr, both));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/frequency.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 6,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 6,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 7,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 7,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 12,
+        "column": 25,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 12,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "semi",
+        "severity": 2,
+        "message": "Missing semicolon.",
+        "line": 14,
+        "column": 2,
+        "nodeType": "VariableDeclaration",
+        "messageId": "missingSemi",
+        "endLine": 15,
+        "endColumn": 1,
+        "fix": {
+          "range": [
+            351,
+            351
+          ],
+          "text": ";"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 16,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 16,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 16,
+        "column": 18,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 16,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 16,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 16,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 17,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 17,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 17,
+        "column": 41,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            417,
+            417
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 8,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 1,
+    "source": "const lib = require('./array-assignment/src/isEqualRecursion.js');\nconst isEqual = lib.isEqual;\n\nconst frequency = function (counts, element) {\n  for (let index = 0; index < counts.length; index++) {\n    if (isEqual(counts[index][0], element)) {\n      counts[index][1]++;\n      return counts;\n    }\n  }\n\n  counts.push([element, 1]);\n  return counts;\n}\n\nconst list = [1, 2, 1];\nconsole.log(list.reduce(frequency, []));",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/map.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 2,
+        "column": 15,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 26,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 26,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 27,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 27,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 28,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 28,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 30,
+        "column": 18,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 30,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 30,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 30,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 30,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 31,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 12
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 10,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const firstLetter = function (text) {\n  return text[0];\n};\n\nconst toUpperCase = function (text) {\n  return text.toUpperCase();\n};\n\nconst length = function (text) {\n  return text.length;\n};\n\nconst stars = function (length) {\n  return '*'.repeat(length);\n};\n\nconst map = function (list, mapper) {\n  const mappedArray = [];\n  for (let index = 0; index < list.length; index++) {\n    mappedArray.push(mapper(list[index], index, list));\n  }\n  return mappedArray;\n};\n\nconst strings = ['lotus', 'marigold', 'tulip', 'mogra'];\nconsole.log(map(strings, firstLetter));\nconsole.log(map(strings, toUpperCase));\nconsole.log(map(strings, length));\n\nconst numbers = [1, 2, 3, 4, 5];\nconsole.log(map(numbers, stars));\n\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/matrixAddition.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 3,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 3,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 11,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 17,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 17,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 17,
+        "column": 19,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 17,
+        "column": 22,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 17,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 17,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 17,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -1.",
+        "line": 17,
+        "column": 40,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 17,
+        "column": 46,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 47
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 17,
+        "column": 49,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 50
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 11,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const addRows = function (row1, row2) {\n  const sum = [];\n  for (let colNum = 0; colNum < 2; colNum++) {\n    sum[colNum] = row1[colNum] + row2[colNum];\n  }\n  return sum;\n};\n\nconst add = function (matrix1, matrix2) {\n  const sum = [];\n  for (let rowNum = 0; rowNum < 2; rowNum++) {\n    sum.push(addRows(matrix1[rowNum], matrix2[rowNum]));\n  }\n  return sum;\n};\n\nconsole.log(add([[1, 2], [2, 3]], [[2, -1], [4, 6]]));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/multiples.js",
+    "messages": [
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 9,
+        "column": 30,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 9,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "semi",
+        "severity": 2,
+        "message": "Missing semicolon.",
+        "line": 12,
+        "column": 4,
+        "nodeType": "ReturnStatement",
+        "messageId": "missingSemi",
+        "endLine": 13,
+        "endColumn": 1,
+        "fix": {
+          "range": [
+            250,
+            250
+          ],
+          "text": ";"
+        }
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 19,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 19,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 19,
+        "column": 23,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 19,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 19,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 19,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 19,
+        "column": 30,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            388,
+            388
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 5,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 1,
+    "source": "const generateArray = function (length) {\n  const array = [];\n  for (let index = 1; index <= length; index++) {\n    array.push(index);\n  }\n  return array;\n};\n\nconst multipleBy = function (x) {\n  return function (element) {\n    return element * x;\n  }\n};\n\nconst multiples = function (number, count) {\n  return generateArray(count).map(multipleBy(number));\n};\n\nconsole.log(multiples(2, 5));",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/partition.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 2,
+        "column": 56,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 57
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 12,
+        "column": 29,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 12,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 12,
+        "column": 41,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 12,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 20,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 20,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 20,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 20,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 20,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 20,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 20,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 21,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 21,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 21,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 21,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 21,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 21,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 21,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 22,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 22,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 22,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 22,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 22,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 22,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 22,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 22,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 22,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 22,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 22,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 22,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 23,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 23,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 23,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 23,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 23,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 23,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 23,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 24,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 24,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 24,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 24,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 24,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 24,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 24,
+        "column": 36,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 24,
+        "column": 39,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 7.",
+        "line": 24,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 8.",
+        "line": 24,
+        "column": 45,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 9.",
+        "line": 24,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 24,
+        "column": 52,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 25,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 25,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 25,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 26,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 26,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 26,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 26,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 26,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 26,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 26,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 26,
+        "column": 41,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            801,
+            801
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 46,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 1,
+    "source": "const addToChunks = function (size, partitions, element) {\n  const lastPartition = partitions[partitions.length - 1];\n  if (lastPartition.length >= size) {\n    partitions.push([element]);\n    return partitions;\n  }\n  lastPartition.push(element);\n  return partitions;\n};\n\nconst partition = function (collection, size) {\n  if (collection.length === 0 || size < 1) {\n    return [];\n  }\n  return collection.reduce(function (partitions, element) {\n    return addToChunks(size, partitions, element);\n  }, [[]]);\n};\n\nconsole.log(partition([1, 2, 3, 4], 2));\nconsole.log(partition([1, 2, 3, 4], 3));\nconsole.log(partition([1, 2, 3, 4], 4));\nconsole.log(partition([1, 2, 3, 4], 1));\nconsole.log(partition([1, 2, 3, 4, 5, 6, 7, 8, 9], 5));\nconsole.log(partition([], 1));\nconsole.log(partition([1, 2, 3, 4], 0));",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/partitionBy.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 2,
+        "column": 19,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 2,
+        "column": 25,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 5,
+        "column": 28,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 5,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 10,
+        "column": 56,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 10,
+        "endColumn": 57
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 11,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 11,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 20,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 20,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 23,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 23,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 25,
+        "column": 13,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 29,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 29,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 30,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 30,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 30,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 30,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 31,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 31,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 31,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 31,
+        "column": 34,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 31,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 31,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 31,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 32,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 32,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 34,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 34,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 34,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 34,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 34,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 34,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 35,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 35,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 35,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 35,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 35,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 35,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 35,
+        "column": 34,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 35,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 36,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 36,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 36,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 36,
+        "column": 31,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 36,
+        "column": 34,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 36,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 36,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 37,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 37,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 38,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 38,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 38,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 38,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 41,
+        "column": 8,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            1109,
+            1109
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 36,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 1,
+    "source": "const isEven = function (number) {\n  return number % 2 === 0;\n};\n\nconst identity = function (x) {\n  return x;\n};\n\nconst addToChunk = function (criterion, partitions, element) {\n  const lastPartition = partitions[partitions.length - 1];\n  if (criterion(lastPartition[0]) === criterion(element)) {\n    lastPartition.push(element);\n    return partitions;\n  }\n  partitions.push([element]);\n  return partitions;\n};\n\nconst partitionBy = function (list, criterion) {\n  if (list.length < 1) {\n    return [];\n  }\n  return list.slice(1).reduce(function (partitions, element) {\n    return addToChunk(criterion, partitions, element);\n  }, [[list[0]]]);\n};\n\nconst main = function () {\n  console.log(partitionBy([2, 2], isEven));\n  console.log(partitionBy([1, 2], isEven));\n  console.log(partitionBy([1, 2, 2, 4, 3], isEven));\n  console.log(partitionBy([], isEven));\n  //////////\n  console.log(partitionBy([1, 1], identity));\n  console.log(partitionBy([1, 1, 2], identity));\n  console.log(partitionBy([1, 2, 2, 5], identity));\n  console.log(partitionBy([], identity));\n  console.log(partitionBy([1], identity));\n};\n\nmain();",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/partitionOverlap.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 6,
+        "column": 54,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 6,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 16,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 16,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 24,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 24,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 24,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 24,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 24,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 24,
+        "column": 34,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 24,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 24,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 25,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 25,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 25,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 25,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 25,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 25,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 25,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 25,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 26,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 26,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 26,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 26,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 26,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 26,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 26,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 26,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 27,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 27,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 27,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 27,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 27,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 27,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 27,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 27,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 28,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 28,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 28,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 28,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 29,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 29,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 29,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 29,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 29,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 38
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 29,
+        "column": 40,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 29,
+        "column": 44,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            962,
+            962
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 39,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 1,
+    "source": "const lastElements = function (collection, numberOfElements) {\n  return collection.slice(collection.length - numberOfElements);\n};\n\nconst addToChunk = function (partitions, element, size, overlap) {\n  let lastPartition = partitions[partitions.length - 1];\n  if (lastPartition.length === size) {\n    lastPartition = lastElements(lastPartition, overlap);\n    partitions.push(lastPartition);\n  }\n  lastPartition.push(element);\n  return partitions;\n};\n\nconst partition = function (collection, size, overlap) {\n  if (overlap >= size || collection.length === 0) {\n    return [];\n  }\n  return collection.reduce(function (partitions, element) {\n    return addToChunk(partitions, element, size, overlap);\n  }, [[]]);\n};\n\nconsole.log(partition([1, 2, 3], 2, 1));\nconsole.log(partition([1, 2, 3, 4], 2, 1));\nconsole.log(partition([1, 2, 3, 4], 3, 2));\nconsole.log(partition([1, 2, 3, 4], 2, 2));\nconsole.log(partition([], 2, 1));\nconsole.log(partition([1, 2, 3, 4], 2, 0));",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/reduce.js",
+    "messages": [
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 1,
+        "column": 23,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 1,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'y' is too short (< 2).",
+        "line": 1,
+        "column": 26,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 1,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 5,
+        "column": 27,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 5,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'y' is too short (< 2).",
+        "line": 5,
+        "column": 30,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 5,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "severity": 2,
+        "message": "Assignment to function parameter 'context'.",
+        "line": 16,
+        "column": 5,
+        "nodeType": "Identifier",
+        "messageId": "assignmentToFunctionParam",
+        "endLine": 16,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 16,
+        "column": 20,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 16,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 17,
+        "column": 13,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 17,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-param-reassign",
+        "severity": 2,
+        "message": "Assignment to function parameter 'context'.",
+        "line": 20,
+        "column": 5,
+        "nodeType": "Identifier",
+        "messageId": "assignmentToFunctionParam",
+        "endLine": 20,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 25,
+        "column": 18,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 25,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 25,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 25,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 25,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 25,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 26,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 26,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 31,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 32,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 32,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 32,
+        "column": 24,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 32,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 33,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 33,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 33,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 33,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 33,
+        "column": 25,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 33,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 34,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 34,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 34,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 34,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 34,
+        "column": 25,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 34,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 34,
+        "column": 38,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 34,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 35,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 35,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 35,
+        "column": 24,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 35,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 35,
+        "column": 37,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 35,
+        "endColumn": 38
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 28,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const sum = function (x, y) {\n  return x + y;\n};\n\nconst reverse = function (x, y) {\n  return y + x;\n};\n\nconst insertSpace = function (character1, character2) {\n  return character1 + ' ' + character2;\n};\n\nconst reduce = function (list, reducer, context) {\n  let start = 0;\n  if (context === undefined) {\n    context = list[0];\n    start = 1;\n  }\n  for (let index = start; index < list.length; index++) {\n    context = reducer(context, list[index], index, list);\n  }\n  return context;\n};\n\nconst numbers = [1, 2, 3, 4, 5];\nconsole.log(reduce(numbers, sum));\n\nconst string = 'table'.split('');\nconsole.log(reduce(string, reverse));\n\nconsole.log(reduce(string, insertSpace));\nconsole.log(reduce([], console.log));\nconsole.log(reduce([1], console.log));\nconsole.log(reduce([1], console.log, 2));\nconsole.log(reduce([], console.log, 2));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/reverse.js",
+    "messages": [
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'j' is too short (< 2).",
+        "line": 3,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 3,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 3,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 3,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'i' is too short (< 2).",
+        "line": 4,
+        "column": 12,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 4,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "semi",
+        "severity": 2,
+        "message": "Missing semicolon.",
+        "line": 9,
+        "column": 2,
+        "nodeType": "VariableDeclaration",
+        "messageId": "missingSemi",
+        "endLine": 10,
+        "endColumn": 1,
+        "fix": {
+          "range": [
+            205,
+            205
+          ],
+          "text": ";"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 0,
+    "source": "const reverse = function (array) {\n  const reversedArray = [];\n  let j = array.length - 1;\n  for (let i = 0; i < array.length; i++) {\n    reversedArray[i] = array[j];\n    j--;\n  }\n  return reversedArray;\n}\n\nexports.reverse = reverse;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/someAndEvery.js",
+    "messages": [
+      {
+        "ruleId": "no-extra-parens",
+        "severity": 2,
+        "message": "Unnecessary parentheses around expression.",
+        "line": 2,
+        "column": 10,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 2,
+        "endColumn": 11,
+        "fix": {
+          "range": [
+            44,
+            56
+          ],
+          "text": "number % 2"
+        }
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 2,
+        "column": 20,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 2,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 2,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 27,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 27,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 28,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 28,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 28,
+        "column": 38,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 28,
+        "column": 41,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 28,
+        "column": 44,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 28,
+        "column": 47,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 29,
+        "column": 35,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 29,
+        "column": 38,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 29,
+        "column": 41,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 30,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 30,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 30,
+        "column": 41,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 30,
+        "column": 44,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 45
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 30,
+        "column": 47,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 48
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 7.",
+        "line": 30,
+        "column": 50,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 51
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 9.",
+        "line": 30,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 30,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 31,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 32,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 32,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 33,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 33,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 34,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 34,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 35,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 35,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 37,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 37,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 38,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 38,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 38,
+        "column": 36,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 38,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 38,
+        "column": 39,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 38,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 38,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 38,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 39,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 39,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 39,
+        "column": 39,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 39,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 39,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 39,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 39,
+        "column": 45,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 39,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 39,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 39,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 40,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 40,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 40,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 40,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 40,
+        "column": 45,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 40,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 5.",
+        "line": 40,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 40,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 7.",
+        "line": 40,
+        "column": 51,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 40,
+        "endColumn": 52
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 9.",
+        "line": 40,
+        "column": 54,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 40,
+        "endColumn": 55
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 41,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 41,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 42,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 42,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 43,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 43,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 44,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 44,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 45,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 45,
+        "endColumn": 12
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 45,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 0,
+    "source": "const isEven = function (number) {\n  return (number % 2) === 0;\n};\n\nconst isVowel = function (character) {\n  return 'aeiou'.includes(character.toLowerCase());\n};\n\nconst some = function (list, predicate) {\n  for (let index = 0; index < list.length; index++) {\n    if (predicate(list[index], index, list)) {\n      return true;\n    }\n  }\n  return false;\n};\n\nconst every = function (list, predicate) {\n  for (let index = 0; index < list.length; index++) {\n    if (!predicate(list[index], index, list)) {\n      return false;\n    }\n  }\n  return true;\n};\n\nconsole.log('Tests of some function');\nconsole.log('[1, 2, 3, 4] - ', some([1, 2, 3, 4], isEven));\nconsole.log('[2, 4, 6] - ', some([2, 4, 6], isEven));\nconsole.log('[1, 3, 5, 7, 9] - ', some([1, 3, 5, 7, 9], isEven));\nconsole.log('[] - ', some([], isEven));\nconsole.log('[c, a, t] - ', some('cat'.split(''), isVowel));\nconsole.log('[a, a] - ', some('aa'.split(''), isVowel));\nconsole.log('[d, t, n] - ', some('dtn'.split(''), isVowel));\nconsole.log('[] - ', some(''.split(''), isVowel));\n\nconsole.log('\\nTests of every function');\nconsole.log('[2, 4, 6] - ', every([2, 4, 6], isEven));\nconsole.log('[1, 2, 3, 4] - ', every([1, 2, 3, 4], isEven));\nconsole.log('[1, 3, 5, 7, 9] - ', every([1, 3, 5, 7, 9], isEven));\nconsole.log('[] - ', every([], isEven));\nconsole.log('[a, a] - ', every('aa'.split(''), isVowel));\nconsole.log('[c, a, t] - ', every('cat'.split(''), isVowel));\nconsole.log('[d, t, n] - ', every('dtn'.split(''), isVowel));\nconsole.log('[] - ', every(''.split(''), isVowel));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/subsets.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 5,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 5,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 6,
+        "column": 39,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 6,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 8,
+        "column": 48,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 8,
+        "endColumn": 49
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 2.",
+        "line": 14,
+        "column": 19,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 14,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 18,
+        "column": 32,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 18,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 42,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 42,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 42,
+        "column": 22,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 42,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 20.",
+        "line": 42,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 42,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 30.",
+        "line": 42,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 42,
+        "endColumn": 32
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 9,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const decimalToBinary = function (decimal) {\n  let currentNumber = decimal;\n  let binary = '';\n\n  while (currentNumber > 0) {\n    const remainder = currentNumber % 2;\n    binary = remainder + binary;\n    currentNumber = Math.floor(currentNumber / 2);\n  }\n  return binary;\n};\n\nconst numOfSubsets = function (set) {\n  return Math.pow(2, set.length);\n};\n\nconst prependWithZeros = function (text, length) {\n  return text.padStart(length, 0);\n};\n\nconst subgroup = function (binarySet, set) {\n  const subset = [];\n\n  for (let index = 0; index < binarySet.length; index++) {\n    if (binarySet[index] === '1') {\n      subset.push(set[index]);\n    }\n  }\n  return subset;\n};\n\nconst subsets = function (set) {\n  const fragments = [];\n\n  for (let index = 0; index < numOfSubsets(set); index++) {\n    const binary = prependWithZeros(decimalToBinary(index), set.length);\n    fragments.push(subgroup(binary, set));\n  }\n  return fragments;\n};\n\nconsole.log(subsets([10, 20, 30]));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/table.js",
+    "messages": [
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 10,
+        "column": 20,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 10,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 21,
+        "column": 38,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 21,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 26,
+        "column": 28,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 26,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 29,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 29,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 29,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 29,
+        "endColumn": 35
+      },
+      {
+        "ruleId": "eol-last",
+        "severity": 1,
+        "message": "Newline required at end of file but not found.",
+        "line": 29,
+        "column": 38,
+        "nodeType": "Program",
+        "messageId": "missing",
+        "fix": {
+          "range": [
+            641,
+            641
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 5,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 1,
+    "source": "const generateArray = function (length) {\n  const array = [];\n  for (let index = 1; index <= length; index++) {\n    array.push(index);\n  }\n  return array;\n};\n\nconst multipleBy = function (number) {\n  return function (x) {\n    return x * number;\n  };\n};\n\nconst multiples = function (number, count) {\n  return generateArray(count).map(multipleBy(number));\n};\n\nconst format = function (number) {\n  return function (multiple, index) {\n    return number + ' * ' + (index + 1) + ' = ' + multiple;\n  };\n};\n\nconst MultiplicationTable = function (number) {\n  return multiples(number, 10).map(format(number));\n};\n\nconsole.log(MultiplicationTable(10));",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/testBalancedParentheses.js",
+    "messages": [
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 82. Maximum allowed is 80.",
+        "line": 4,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 4,
+        "endColumn": 83
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 8,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 8,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 17,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 17,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 18,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 18,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 19,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 19,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 20,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 20,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 81. Maximum allowed is 80.",
+        "line": 21,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 21,
+        "endColumn": 82
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 83. Maximum allowed is 80.",
+        "line": 22,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 22,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 83. Maximum allowed is 80.",
+        "line": 23,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 23,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 83. Maximum allowed is 80.",
+        "line": 24,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 24,
+        "endColumn": 84
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 92. Maximum allowed is 80.",
+        "line": 25,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 25,
+        "endColumn": 93
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 26,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 26,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 86. Maximum allowed is 80.",
+        "line": 27,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 27,
+        "endColumn": 87
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 90. Maximum allowed is 80.",
+        "line": 28,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 28,
+        "endColumn": 91
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 89. Maximum allowed is 80.",
+        "line": 31,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 31,
+        "endColumn": 90
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 95. Maximum allowed is 80.",
+        "line": 32,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 32,
+        "endColumn": 96
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 87. Maximum allowed is 80.",
+        "line": 33,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 33,
+        "endColumn": 88
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 96. Maximum allowed is 80.",
+        "line": 34,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 34,
+        "endColumn": 97
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 94. Maximum allowed is 80.",
+        "line": 35,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 35,
+        "endColumn": 95
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 103. Maximum allowed is 80.",
+        "line": 36,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 36,
+        "endColumn": 104
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 114. Maximum allowed is 80.",
+        "line": 37,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 37,
+        "endColumn": 115
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 112. Maximum allowed is 80.",
+        "line": 38,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 38,
+        "endColumn": 113
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 21,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const lib = require('./balancedParentheses.js');\nconst areBalancedParentheses = lib.areBalancedParentheses;\n\nconst testAreBalancedParentheses = function (text, expectedBoolean, description) {\n  const testPassed = areBalancedParentheses(text) === expectedBoolean;\n  const status = testPassed ? '✓' : 'x';\n\n  console.log(status, ' - ', description);\n  return testPassed;\n};\n\nconst areBalancedParenthesesTests = function () {\n  testAreBalancedParentheses('(', false, 'Single opening paranthesis.');\n  testAreBalancedParentheses(')', false, 'Single closing paranthesis.');\n  testAreBalancedParentheses('()', true, 'A pair of balanced parantheses.');\n  testAreBalancedParentheses(')(', false, 'A pair of unbalanced parantheses.');\n  testAreBalancedParentheses('(()', false, 'Three paranthesis combination: (()');\n  testAreBalancedParentheses('())', false, 'Three paranthesis combination: ())');\n  testAreBalancedParentheses('()(', false, 'Three paranthesis combination: ()(');\n  testAreBalancedParentheses(')()', false, 'Three paranthesis combination: )()');\n  testAreBalancedParentheses('()()', true, 'Two pairs of balanced parantheses.');\n  testAreBalancedParentheses(')()(', false, 'Unbalanced parantheses pairs: )()(.');\n  testAreBalancedParentheses(')(()', false, 'Unbalanced parantheses pairs: )(().');\n  testAreBalancedParentheses('())(', false, 'Unbalanced parantheses pairs: ())(.');\n  testAreBalancedParentheses('(())', true, 'One level of nesting of balanced parantheses.');\n  testAreBalancedParentheses('((()))', true, 'Two level of nesting of balanced parantheses.');\n  testAreBalancedParentheses('(((()())))', true, 'Balanced parantheses.: (((()())))');\n  testAreBalancedParentheses('(((()())))()', true, 'Balanced parantheses.: (((()())))()');\n  testAreBalancedParentheses('((())', false, 'Unbalanced parantheses: ((())');\n  testAreBalancedParentheses('(()))', false, 'Unbalanced parantheses: (()))');\n  testAreBalancedParentheses('(2 * 3) - 1', true, 'Balanced parantheses with some text');\n  testAreBalancedParentheses('((2 * 3) (- 1)', false, 'Unbalanced parantheses with some text');\n  testAreBalancedParentheses('[()]', true, 'Balanced parantheses and square brackets');\n  testAreBalancedParentheses('[(])', false, 'Unbalanced parantheses and square brackets: [(])');\n  testAreBalancedParentheses('[(]', false, 'Unbalanced parantheses and square brackets: [(]');\n  testAreBalancedParentheses('{[()]}', true, 'Balanced parantheses, square brackets and curly braces');\n  testAreBalancedParentheses('{([)]}', false, 'Unbalanced parantheses, square brackets and curly braces: {([)]}');\n  testAreBalancedParentheses('{()]}', false, 'Unbalanced parantheses, square brackets and curly braces: {()]}');\n};\n\nareBalancedParenthesesTests();\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/testFill.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 8,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 8,
+        "endColumn": 14
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const compareArrays = require('./compareArrays.js').compareArrays;\nconst fill = require('./fill.js').fill;\n\nconst testFill = function (array, value, expectedArray, description) {\n  const testPassed = compareArrays(fill(array, value), expectedArray);\n  const status = testPassed ? '✓' : 'x';\n\n  console.log(status, ' - ', description);\n  return testPassed;\n};\n\nconst fillTests = function () {\n  testFill([], 0, [], 'Empty array');\n  testFill([1], 0, [0], 'Array with one element');\n  testFill([1, 2], 0, [0, 0], 'Array with two elements');\n  testFill([1, 2, 3], 0, [0, 0, 0], 'Array with three elements');\n  testFill([1, 2, 3], 'a', ['a', 'a', 'a'], 'Value as string');\n};\n\nfillTests();\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/testReverse.js",
+    "messages": [
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 8,
+        "column": 3,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 8,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 1,
+        "message": "This line has a length of 86. Maximum allowed is 80.",
+        "line": 19,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 19,
+        "endColumn": 87
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const compareArrays = require('./compareArrays.js').compareArrays;\nconst reverse = require('./reverse.js').reverse;\n\nconst testReverse = function (array, expectedArray, description) {\n  const testPassed = compareArrays(reverse(array), expectedArray);\n  const status = testPassed ? '✓' : 'x';\n\n  console.log(status, ' - ', description);\n  return testPassed;\n};\n\nconst reverseTests = function () {\n  testReverse([], [], 'Empty array');\n  testReverse([1], [1], 'Single-element array of number type');\n  testReverse([1, 2], [2, 1], 'Two-element array of number type');\n  testReverse([1, 3, 2], [2, 3, 1], 'Three-element array of number type');\n  testReverse(['a'], ['a'], 'Single-element array of string type');\n  testReverse(['a', 'b'], ['b', 'a'], 'Two-element array of string type');\n  testReverse(['a', 'c', 'b'], ['b', 'c', 'a'], 'Three-element array of string type');\n  testReverse(['ab', 'c', 1, 1.6], [1.6, 1, 'c', 'ab'], 'Heterogeneous array');\n};\n\nreverseTests();\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/array/uniqueElements.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 15,
+        "column": 18,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 15,
+        "column": 21,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 22
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 15,
+        "column": 24,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 4.",
+        "line": 15,
+        "column": 27,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 15,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 15,
+        "column": 33,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 6.",
+        "line": 15,
+        "column": 36,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 9.",
+        "line": 15,
+        "column": 39,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1.",
+        "line": 15,
+        "column": 42,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 15,
+        "endColumn": 43
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 16,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 16,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 19,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 19,
+        "endColumn": 12
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 11,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const addIfAbsent = function (set, element) {\n  for (let index = 0; index < set.length; index++) {\n    if (element === set[index]) {\n      return set;\n    }\n  }\n  set.push(element);\n  return set;\n};\n\nconst uniqueElements = function (list) {\n  return list.reduce(addIfAbsent, []);\n};\n\nconst numbers = [1, 1, 1, 4, 3, 6, 6, 9, 1];\nconsole.log(uniqueElements(numbers));\n\nconst state = 'maharashtra'.split('');\nconsole.log(uniqueElements(state));\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  }
+]

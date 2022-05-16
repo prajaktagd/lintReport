@@ -1,0 +1,310 @@
+[
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/coolProjects/square.js",
+    "messages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 256.",
+        "line": 6,
+        "column": 50,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 6,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'randomBgColor' is assigned a value but never used.",
+        "line": 8,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 8,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 3.",
+        "line": 9,
+        "column": 30,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 9,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 9,
+        "column": 38,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 9,
+        "endColumn": 39
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 9,
+        "column": 45,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 9,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'x' is defined but never used.",
+        "line": 9,
+        "column": 45,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 9,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.5.",
+        "line": 13,
+        "column": 26,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 13,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 95. Maximum allowed is 80.",
+        "line": 17,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 17,
+        "endColumn": 96
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'k' is too short (< 2).",
+        "line": 17,
+        "column": 57,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 17,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'v' is too short (< 2).",
+        "line": 17,
+        "column": 60,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 17,
+        "endColumn": 61
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'w' is too short (< 2).",
+        "line": 20,
+        "column": 26,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 20,
+        "endColumn": 27
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'h' is too short (< 2).",
+        "line": 20,
+        "column": 29,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 20,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 21,
+        "column": 45,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 21,
+        "endColumn": 63,
+        "fix": {
+          "range": [
+            609,
+            627
+          ],
+          "text": "'background-color'"
+        }
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'w' is too short (< 2).",
+        "line": 25,
+        "column": 24,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 25,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 88. Maximum allowed is 80.",
+        "line": 26,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 26,
+        "endColumn": 89
+      },
+      {
+        "ruleId": "quotes",
+        "severity": 2,
+        "message": "Strings must use singlequote.",
+        "line": 26,
+        "column": 67,
+        "nodeType": "Literal",
+        "messageId": "wrongQuotes",
+        "endLine": 26,
+        "endColumn": 78,
+        "fix": {
+          "range": [
+            785,
+            796
+          ],
+          "text": "'flex-wrap'"
+        }
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 93. Maximum allowed is 80.",
+        "line": 27,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 27,
+        "endColumn": 94
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 1800.",
+        "line": 27,
+        "column": 25,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 27,
+        "column": 36,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "id-length",
+        "severity": 2,
+        "message": "Identifier name 'x' is too short (< 2).",
+        "line": 27,
+        "column": 43,
+        "nodeType": "Identifier",
+        "messageId": "tooShort",
+        "endLine": 27,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'x' is defined but never used.",
+        "line": 27,
+        "column": 43,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 27,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 27,
+        "column": 55,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 57
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 27,
+        "column": 59,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 27,
+        "endColumn": 61
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 400.",
+        "line": 33,
+        "column": 53,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 33,
+        "endColumn": 56
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 24,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 2,
+    "fixableWarningCount": 0,
+    "source": "const fs = require('fs');\n\n// const openTag = (tag) => '<' + tag + '>';\n// const closeTag = (tag) => '</' + tag + '>';\n\nconst pigment = () => Math.floor(Math.random() * 256);\n\nconst randomBgColor = () => {\n  return 'rgb('.concat(Array(3).fill(0).map(x => pigment()).join(','), ')');\n};\n\nconst randomBlackOrWhite = () => {\n  return Math.random() < 0.5 ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)';\n};\n\nconst style = (properties) => {\n  return 'style = \"' + Object.entries(properties).map(([k, v]) => k + ':' + v).join(';') + '\"';\n};\n\nconst square = function (w, h, bg) {\n  const properties = { width: w, height: h, \"background-color\": bg() };\n  return '<div ' + style(properties) + '></div>';\n};\n\nconst wall = function (w) {\n  const properties = { width: w, margin: 'auto', display: 'flex', \"flex-wrap\": 'wrap' };\n  const squares = Array(1800).fill(0).map(x => square(10, 10, randomBlackOrWhite)).join(' ');\n  return '<div ' + style(properties) + '>' + squares + '</div>';\n};\n\n// console.log(wall(800, 800));\n// console.log(square(100, 100, randomBgColor));\nfs.writeFileSync('./coolProjects/square.html', wall(400), 'utf8');\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  }
+]

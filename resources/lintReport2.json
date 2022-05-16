@@ -1,0 +1,116 @@
+[
+  {
+    "filePath": "/Users/praju/workspace/js/practice-programs/coolProjects/lintReport/lintReport.js",
+    "messages": [],
+    "suppressedMessages": [
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 6,
+        "column": 60,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 6,
+        "endColumn": 61,
+        "suppressions": [
+          {
+            "kind": "directive",
+            "justification": ""
+          }
+        ]
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 10.",
+        "line": 28,
+        "column": 68,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 28,
+        "endColumn": 70,
+        "suppressions": [
+          {
+            "kind": "directive",
+            "justification": ""
+          }
+        ]
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 41,
+        "column": 29,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 41,
+        "endColumn": 30,
+        "suppressions": [
+          {
+            "kind": "directive",
+            "justification": ""
+          }
+        ]
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: -1.",
+        "line": 44,
+        "column": 53,
+        "nodeType": "UnaryExpression",
+        "messageId": "noMagic",
+        "endLine": 44,
+        "endColumn": 55,
+        "suppressions": [
+          {
+            "kind": "directive",
+            "justification": ""
+          }
+        ]
+      },
+      {
+        "ruleId": "no-magic-numbers",
+        "severity": 2,
+        "message": "No magic number: 0.",
+        "line": 44,
+        "column": 57,
+        "nodeType": "Literal",
+        "messageId": "noMagic",
+        "endLine": 44,
+        "endColumn": 58,
+        "suppressions": [
+          {
+            "kind": "directive",
+            "justification": ""
+          }
+        ]
+      }
+    ],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "global-require",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "handle-callback-err",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-exit",
+        "replacedBy": []
+      },
+      {
+        "ruleId": "no-process-env",
+        "replacedBy": []
+      }
+    ]
+  }
+]
